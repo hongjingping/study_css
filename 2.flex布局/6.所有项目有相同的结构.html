@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container {
+            padding-top: 20px;
+            display: flex;
+            width: 500px;
+            height: 400px;
+            background: #ffffff;
+            border: 2px solid #ddd;
+        }
+        .item {
+            height: 30px;
+            flex-grow: 1;
+            flex-basis: 50%;
+        }
+        .item1 {
+            background: #ccc;
+        }
+        .item2 {
+            background: #999;
+        }
+    </style>
+</head>
+<body>
+<!--由于item1，item2的flex-grow均为默认值，所以三个均平分。-->
+<pre>
+    希望两个项目的宽度是相同的,平分整个容器的宽度
+</pre>
+<div class="container">
+    <div class="item item1"></div>
+    <div class="item item2"></div>
+    <div class="item item2"></div>
+    <div class="item item2"></div>
+</div>
+</body>
+</html>

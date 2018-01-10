@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            text-align: center;
+            color: #fff;
+            font-size: 30px;
+        }
+        body {
+            display: flex;
+            flex-flow: column nowrap;
+        }
+        header,footer {
+            background: #333;
+            height: 50px;
+        }
+        section {
+            display: flex;
+        }
+        nav {
+            width: 100px;
+            background: #aaa;
+            flex: 0 1 100px;
+        }
+        .main {
+            width: 500px;
+            background: #ccc;
+            flex: 1 1 auto;
+        }
+        .sliderbar {
+            width: 150px;
+            background: #eee;
+            flex: 0 1 150px;
+            order: -1;
+        }
+    </style>
+</head>
+<body>
+<header>header</header>
+<section>
+    <nav>导航</nav>
+    <div class="main">
+        主体部分
+        <p>item1</p>
+        <p>item1</p>
+        <p>item1</p>
+        <p>item1</p>
+        <p>item1</p>
+    </div>
+    <div class="sliderbar">侧边栏</div>
+</section>
+<footer>尾部</footer>
+</body>
+</html>

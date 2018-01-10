@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .left {
+            float: left;
+            height: 200px;
+            width: 100px;
+            margin-right: 20px;
+            background: red;
+        }
+        .right {
+            float: right;
+            height: 200px;
+            width: 200px;
+            margin-left: 20px;
+            background: bisque;
+        }
+        .main {
+            overflow: hidden;
+            height: 200px;
+            background: lawngreen;
+        }
+    </style>
+</head>
+<body>
+<!--缺点跟方法一类似，主要内容模块无法最先加载，当页面中内容较多时会影响用户体验。因此为了解决这个问题，有了下面要介绍的布局方案双飞翼布局。-->
+<div class="container">
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="main"></div>
+</div>
+</body>
+</html>

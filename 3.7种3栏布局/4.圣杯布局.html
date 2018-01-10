@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container {
+            margin-left: 120px;
+            margin-right: 220px;
+        }
+        .main {
+            float: left;
+            width: 100%;
+            height: 300px;
+            background: red;
+        }
+        .left {
+            float: left;
+            width: 100px;
+            height: 300px;
+            margin-left: -100%;
+            position: relative;
+            left: -120px;
+            background: pink;
+        }
+        .right {
+            float: left;
+            width: 200px;
+            height: 300px;
+            margin-left: -200px;
+            position: relative;
+            right: -220px;
+            background: green;
+        }
+    </style>
+</head>
+<body>
+<!--跟双飞翼布局很像，有一些细节上的区别，相对于双飞翼布局来说，HTML 结构相对简单，但是样式定义就稍微复杂，也是优先加载内容主体。-->
+<div class="container">
+    <div class="main"></div>
+    <div class="left"></div>
+    <div class="right"></div>
+</div>
+</body>
+</html>
